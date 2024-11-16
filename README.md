@@ -4,23 +4,23 @@
 
 Step 1: Install Java
 
-$sudo apt update	- done
+	$sudo apt update	- done
 
-java -version -verify
+	java -version -verify
 
-sudo apt install openjdk-17-jre-headless  - i install
+sudo apt install openjdk-17-jre-headless  
 
-sudo apt install openjdk-17-jdk-headless   - 2nd time  ------- jdk is mandatory to compile the java code
+sudo apt install openjdk-17-jdk-headless   ------- jdk is mandatory to compile the java code
 
-sudo apt install fontconfig openjdk-17-jre - jenkins said
+sudo apt install fontconfig openjdk-17-jre - jenkins documentation said
 
 
 java -version
+
 openjdk version "17.0.8" 2023-07-18
 OpenJDK Runtime Environment (build 17.0.8+7-Debian-1deb12u1)
 OpenJDK 64-Bit Server VM (build 17.0.8+7-Debian-1deb12u1, mixed mode, sharing)
 
-done
 
 -------------------------
 
@@ -47,7 +47,7 @@ Step 4: Install Jenkins
 	to login inside jenkins we need password
 
 	Get the initial admin password  from command
-	sudo cat  /var/lib/jenkins/secrets/initialAdminPassword			- done
+	sudo cat  /var/lib/jenkins/secrets/initialAdminPassword			
 
 
 Step 5: Verify installation
@@ -64,9 +64,8 @@ sudo systemctl status jenkins	- jenkins is running		done
 Step 6: Once Jenkins is up and running, access it from the
 link: http://localhost:8080    or the IP of virtual machine like xx.xx.xx.xx:8080		done
 
-
 Start, Stop & Restart Jenkins
 
-$ sudo service jenkins restart
-$ sudo service jenkins stop
-$ sudo service jenkins start
+	$ sudo service jenkins restart
+	$ sudo service jenkins stop
+	$ sudo service jenkins start
